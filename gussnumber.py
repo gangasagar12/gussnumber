@@ -17,3 +17,15 @@ def main():
     while a!=n and gusses_count < max_gusses:
         gusses_count+=1
         #  increament the gusses count
+        
+        try:
+            a=int(input(" enter the gusses number: "))
+        except ValueError:
+            print("please enter a valid integer:")
+            continue
+        #  keep to the next iteration if input is invilid
+        gusses_history.append(a)
+        #  add the gusses to the history
+        if a>n:
+            print("please gusses the lower number: ")
+        elif a<n:
