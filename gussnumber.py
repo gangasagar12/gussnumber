@@ -29,3 +29,17 @@ def main():
         if a>n:
             print("please gusses the lower number: ")
         elif a<n:
+            print("Please enter the  higher order number:")
+    #  after the exiting the loop check if the gussed is correct
+    if a==n:
+        print(f" you have gussed it in {gusses_count} gusses")
+    else:
+        print(f" sorry you have failedi on gussing the number : you have all used {max_gusses} gusses")
+        print(f" the correct number was {n}")
+
+    #  print the gusses history of gusses
+    print("your gusses history is: ",gusses_history)
+
+    #  call the main function for the game to start
+if __name__=="__main__":
+        main()
